@@ -14,6 +14,7 @@ import Sales from './pages/Sales';
 import Customers from './pages/Customers';
 import Users from './pages/Users';
 import Reports from './pages/Reports';
+import AIAgent from './pages/AIAgent';
 
 const App = () => {
     const { loading } = useContext(AuthContext);
@@ -35,6 +36,11 @@ const App = () => {
                     <Route path="customers" element={<Customers />} />
                     
                     {/* Admin Only Routes */}
+                    <Route path="ai-agent" element={
+                        <RoleProtectedRoute requiredRole="ADMIN">
+                            <AIAgent />
+                        </RoleProtectedRoute>
+                    } />
                     <Route path="products" element={
                         <RoleProtectedRoute requiredRole="ADMIN">
                             <Products />

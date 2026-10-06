@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Outlet, Navigate, Link, useLocation } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-import { FiHome, FiShoppingBag, FiBox, FiUsers, FiSettings, FiLogOut, FiPieChart, FiMonitor } from 'react-icons/fi';
+import { FiHome, FiShoppingBag, FiBox, FiUsers, FiSettings, FiLogOut, FiPieChart, FiMonitor, FiCpu } from 'react-icons/fi';
 
 const MainLayout = () => {
     const { user, logout } = useContext(AuthContext);
@@ -13,6 +13,7 @@ const MainLayout = () => {
 
     const navigation = [
         { name: 'Dashboard', href: '/dashboard', icon: FiHome, adminOnly: false },
+        { name: 'AI Assistant', href: '/ai-agent', icon: FiCpu, adminOnly: true },
         { name: 'POS', href: '/pos', icon: FiMonitor, adminOnly: false },
         { name: 'Sales', href: '/sales', icon: FiShoppingBag, adminOnly: false },
         { name: 'Products', href: '/products', icon: FiBox, adminOnly: true },
