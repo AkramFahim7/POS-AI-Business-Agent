@@ -1,4 +1,4 @@
-USE pos_system;
+USE pos_ai_database;
 
 -- Insert Admin User (Password: Admin@123)
 INSERT INTO users (name, email, password, role, phone, status)

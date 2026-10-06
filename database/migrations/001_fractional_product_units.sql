@@ -1,4 +1,4 @@
-USE pos_system;
+USE pos_ai_database;
 
 -- Preserve the legacy units long enough to classify and normalize existing products.
 ALTER TABLE products

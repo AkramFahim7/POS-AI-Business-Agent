@@ -1,6 +1,6 @@
 -- Create database if it doesn't exist
-CREATE DATABASE IF NOT EXISTS pos_system;
-USE pos_system;
+CREATE DATABASE IF NOT EXISTS pos_ai_database;
+USE pos_ai_database;
 
 -- Users Table
 CREATE TABLE IF NOT EXISTS users (
