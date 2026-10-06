@@ -1,9 +1,9 @@
-require('dotenv').config({ path: '../.env' });
-const getSalesData = require('../ai-agent/tools/getSalesData');
-const getInventoryData = require('../ai-agent/tools/getInventoryData');
-const getProductData = require('../ai-agent/tools/getProductData');
-const getCustomerData = require('../ai-agent/tools/getCustomerData');
-const getBusinessMetrics = require('../ai-agent/tools/getBusinessMetrics');
+require('dotenv').config({ path: './.env' });
+const getSalesData = require('./ai-agent/tools/getSalesData');
+const getInventoryData = require('./ai-agent/tools/getInventoryData');
+const getProductData = require('./ai-agent/tools/getProductData');
+const getCustomerData = require('./ai-agent/tools/getCustomerData');
+const getBusinessMetrics = require('./ai-agent/tools/getBusinessMetrics');
 
 const runTests = async () => {
     try {
